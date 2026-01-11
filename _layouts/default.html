@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if page.title %}{{ page.title }}{% else %}Cosmos Development{% endif %}</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  <!-- Adjust path to your favicon -->
-    <link rel="stylesheet" href="../../assets/css/main.css">  <!-- Adjust path if needed -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="../../assets/css/main.css">
 
     <!-- Embed Tags -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Cosmos Development{% endif %}" />
@@ -19,6 +19,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
+            <!-- Hamburger menu button -->
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="navbar-logo">
                 <img src="assets/images/icon.png" alt="Icon" class="navbar-icon">
                 <span class="navbar-title">Cosmos</span>
@@ -35,5 +41,16 @@
     
     {{ content }}
     
+    <!-- Hamburger menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.querySelector('.navbar-toggle');
+            const links = document.querySelector('.navbar-links');
+            
+            toggle.addEventListener('click', function() {
+                links.classList.toggle('show');
+            });
+        });
+    </script>
 </body>
 </html>
