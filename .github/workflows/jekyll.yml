@@ -28,5 +28,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site  # Deploys the contents of _site to gh-pages branch
+          github_token: ${{ secrets.GH_PAT }}  # Use the PAT secret
+          publish_dir: ./_site # Deploys the contents of _site to gh-pages branch
+          force_orphan: true
