@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }}{% else %}Cosmos - Home Page{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}Cosmos Development{% endif %}</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  <!-- Adjust path to your favicon -->
     <link rel="stylesheet" href="../../assets/css/main.css">  <!-- Adjust path if needed -->
+
+    <!-- Embed Tags -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Cosmos Development{% endif %}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}The official Cosmos Development website, stay up to date with our latest projects and releases.{% endif %}" />
+    <meta property="og:image" content="{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/images/icon.png' | absolute_url }}{% endif %}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cosmos Development" />
 </head>
 <body>
     <nav class="navbar">
