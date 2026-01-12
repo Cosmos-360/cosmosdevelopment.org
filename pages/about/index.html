@@ -5,6 +5,16 @@ title: Cosmos - About
 description: "About Cosmos Development."
 ---
 <main class="content">
-    <h1>Welcome to the About Page</h1>
-    <p>This is a placeholder for the about page content.</p>
+    <h1 style="text-align: center;">Meet the Cosmos Team</h1>
+    <div class="team-members">
+        {% for member in site.data.team %}
+        <div class="team-member-card">
+            <img src="https://github.com/{{ member.github_username }}.png" alt="{{ member.name }} Profile Picture">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.description }}</p>
+            <a href="https://github.com/{{ member.github_username }}" target="_blank">GitHub</a>
+            <p class="discord-tag">Discord: {{ member.discord }}</p>
+        </div>
+        {% endfor %}
+    </div>
 </main>

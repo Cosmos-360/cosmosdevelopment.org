@@ -1,0 +1,34 @@
+- name: Papa Quill
+  github_username: Papa-Quill
+  description: Founder, Developer, Modder.
+  discord: papaquill
+
+- name: J0w03L
+  github_username: J0w03L
+  description: Main Plugin Developer, Modder.
+  discord: j0w03l
+
+- name: Twitch Kat
+  github_username: BurningSunFlare
+  description: Modder, Software Developer.
+  discord: twitchkat
+
+- name: "0x2480"
+  github_username: "0x2480"
+  description: Plugin Contributor, Modder.
+  discord: "0x2480"
+
+- name: KrazyDav
+  github_username: krazydav
+  description: Modder, Contributor.
+  discord: krazydav
+
+- name: Quest
+  github_username: Fangxbox
+  description: Modder, Contributor.
+  discord: quest1
+  
+- name: PapaDane
+  github_username: JakobDane
+  description: Team Member.
+  discord: papadane
