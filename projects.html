@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos - Development Projects</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+
+    <!-- Embed Tags -->
+    <meta property="og:title" content="Cosmos - Development Projects" />
+    <meta property="og:description" content="Projects developed by the Cosmos team." />
+    <meta property="og:image" content="https://cosmosdevelopment.org/assets/images/icon.png" />
+    <meta property="og:url" content="https://cosmosdevelopment.org/projects" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cosmos Development" />
+    <meta name="theme-color" content="#6E6AF6">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Hamburger menu button -->
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="navbar-logo">
+                <img src="assets/images/icon.png" alt="Icon" class="navbar-icon">
+                <span class="navbar-title">Cosmos</span>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="/" >Home</a></li>
+                <li><a href="/projects" >Projects</a></li>
+                <li><a href="/downloads" >Downloads</a></li>
+                <li><a href="/about" >About</a></li>
+                <li><a href="/docs" >Docs</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="content">
+    <h1>Welcome to the Projects Page</h1>
+    <p>This is a placeholder for the projects page content.</p>
+</main>
+    
+    <!-- Hamburger menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggle = document.querySelector('.navbar-toggle');
+            const links = document.querySelector('.navbar-links');
+            
+            toggle.addEventListener('click', function() {
+                links.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
